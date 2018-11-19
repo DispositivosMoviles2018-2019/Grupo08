@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.dldiaz.proyecto.proyecto_final">
+=======
+    package="ec.edu.uce">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+>>>>>>> d697a6ab697298e7b93568e2197ce1eb0514b8c8
 
     <application
         android:allowBackup="true"
@@ -9,17 +15,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".vista.MainActivity">
+=======
+        <activity
+            android:name=".controlador.Login_Activity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar">
+>>>>>>> d697a6ab697298e7b93568e2197ce1eb0514b8c8
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".vista.DatosVehiculoActivity">
 
         </activity>
         <activity android:name=".vista.RegistroActivity"></activity>
+=======
+        <activity
+            android:name=".controlador.ListaVehiculos_Activity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controlador.Registro_Activity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controlador.NuevoVehiculo_Activity"
+            android:label="@string/title_activity_form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controlador.EditarVehiculo_Activity"
+            android:label="@string/title_activity_edit_form"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+>>>>>>> d697a6ab697298e7b93568e2197ce1eb0514b8c8
     </application>
 
 </manifest>
