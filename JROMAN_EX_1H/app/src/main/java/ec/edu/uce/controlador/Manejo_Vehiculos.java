@@ -7,10 +7,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -19,6 +15,10 @@ import java.util.List;
 import ec.edu.uce.componentes.CustomException;
 import ec.edu.uce.componentes.StorageException;
 import ec.edu.uce.modelo.Vehiculo;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class Manejo_Vehiculos {
 

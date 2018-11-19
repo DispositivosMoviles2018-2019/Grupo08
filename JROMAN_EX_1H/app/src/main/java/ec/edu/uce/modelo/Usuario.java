@@ -1,5 +1,7 @@
 package ec.edu.uce.modelo;
 
+import java.util.Objects;
+
 public class Usuario {
 
     private String username;
