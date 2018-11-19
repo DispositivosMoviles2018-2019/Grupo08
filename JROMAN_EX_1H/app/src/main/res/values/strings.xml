@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PROYECTO_FINAL</string>
+    <string name="title_activity_login">Ingreso</string>
+
+    <string name="usuario">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Ingresar</string>
+    <string name="register">Registrarse</string>
+
+    <string name="action_persist">Persistir</string>
+    <string name="action_logout">Salir</string>
+
+    <string name="title_activity_welcome">Lista de Vehiculos</string>
+    <string name="title_activity_register">Registro</string>
+    <string name="title_activity_form">Ingresar Datos</string>
+
+    <string name="input_placa">Ingrese la placa</string>
+    <string name="input_marca">Ingrese la marca</string>
+    <string name="input_costo">Ingrese el costo</string>
+    <string name="input_color">Ingrese el color</string>
+    <string name="switch_matriculado">Esta matriculado:</string>
+
+    <string name="save">Guardar</string>
+    <string name="title_activity_edit_form">EditFormActivity</string>
+
+</resources>
