@@ -1,0 +1,4 @@
+#Mon Nov 19 18:11:25 ECT 2018
+base.0=/home/janusdeb/AndroidStudioProjects/JROMAN_EXA_1H/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
