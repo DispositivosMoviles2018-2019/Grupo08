@@ -1,0 +1,19 @@
+[
+  {
+    "placa": "ABC123",
+    "marca": "Kia",
+    "fecFabricacion":"15-12",
+    "costo": 123,
+    "matriculado": true,
+    "color": "azul"
+  },
+  {
+    "placa": "ABC578",
+    "marca": "Chevrolet",
+    "fecFabricacion":"15-12",
+    "costo": 567,
+    "matriculado": true,
+    "color": "negro"
+  }
+
+]

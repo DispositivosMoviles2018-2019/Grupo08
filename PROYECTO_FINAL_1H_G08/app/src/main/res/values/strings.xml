@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PROYECTO_FINAL_1H_G08</string>
+    <string name="calendario">Calendario</string>
+    <string name="costo">Costo</string>
+    <string name="marca">Marca</string>
+    <string name="date">Date:</string>
+    <string name="matriculado">Matriculado:</string>
+    <string name="placa">Placa</string>
+    <string name="guardar">Guardar</string>
+    <string name="lista_de_vehiculos">Lista de Vehiculos</string>
+    <string name="color">color</string>
+    <string name="Salir">Salir</string>
+</resources>
