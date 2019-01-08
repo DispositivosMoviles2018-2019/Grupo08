@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "638038844610",
+    "firebase_url": "https://fir-notificaciones-d4e5b.firebaseio.com",
+    "project_id": "fir-notificaciones-d4e5b",
+    "storage_bucket": "fir-notificaciones-d4e5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638038844610:android:b30e473ad2c20271",
+        "android_client_info": {
+          "package_name": "com.herprogramacion.carinsurance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638038844610-514o9e137i258468vhoik15i0jn7v11a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-bJsj4w4Z515Qn0sbhV5ecJJlvy9UZvs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
