@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/fotoDialogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/icon" />
+
+                <Button
+                    android:id="@+id/btn_imagen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fotoDialogo"
+                    android:layout_centerHorizontal="true"
+                    android:width="1dp"
+                    android:text="Cambiar Imagen"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editTextPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="ABC-1234"
+                android:maxLength="8">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Chevrolet"
+                android:maxLength="15">
+
+
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/editcheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Matriculado" />
+
+            <CheckBox
+                android:id="@+id/reservado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false"
+                android:text="Reservado" />
+
+            <EditText
+                android:id="@+id/editTextFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="2018-01-01"
+                android:inputType="date">
+
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextCosto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="50000.20"
+                android:inputType="numberDecimal"
+                android:maxLength="10" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Color"
+                android:textColor="#ff000000" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical|center|clip_vertical|clip_horizontal"
+                android:layout_marginTop="1dp"
+                android:text="OK" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
