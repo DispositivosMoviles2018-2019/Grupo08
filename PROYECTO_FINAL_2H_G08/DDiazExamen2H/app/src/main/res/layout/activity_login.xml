@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".vista.LoginActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"/>
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/usuario"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="Ingrese su usuario"
+                        android:textColorHint="@color/abc_primary_text_material_dark"
+                        android:layout_below="@+id/imageButton"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/black"
+                        android:typeface="normal"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Ingrese su contraseña"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/abc_primary_text_material_dark"
+                        android:layout_below="@+id/imageButton"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/black"
+                        android:typeface="normal"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                    android:id="@+id/btnIngresar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_red_dark"
+                    android:onClick="login"
+                    android:text="Ingresar"
+                    android:textColor="@android:color/background_light"/>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"/>
+            <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_red_dark"
+                    android:onClick="redirigir"
+                    android:text="Registrarse"
+                    android:textColor="@android:color/background_light"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
