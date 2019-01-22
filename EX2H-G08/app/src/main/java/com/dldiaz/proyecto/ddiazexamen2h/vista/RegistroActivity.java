@@ -63,15 +63,18 @@ public class RegistroActivity extends AppCompatActivity {
 
         }
     }
+
     private boolean validarContrasena(String contrasena){
-        Pattern restriccion = Pattern.compile(".*[A-Z].*");
+        Pattern restriccion = Pattern.compile("[A-Z]");
         Matcher validar = restriccion.matcher(contrasena);
-        if(!validar.matches()){
+        if(!validar.find()){
             return false;
         }
-        if(contrasena.length()>=8)
+        if(contrasena.length()==8) {
+            return true;
+        }else {
             return false;
-        return true;
+        }
     }
     private boolean consultarSql() {
         ConexionSqliteHelper conn = new ConexionSqliteHelper(this, "db reservaDB", null, 1);

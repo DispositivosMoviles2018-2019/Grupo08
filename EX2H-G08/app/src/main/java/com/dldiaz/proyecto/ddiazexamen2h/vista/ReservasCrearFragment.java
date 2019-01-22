@@ -42,6 +42,7 @@ public class ReservasCrearFragment extends Fragment {
     CalendarView fecPrestamo,fecEntrega;
     TextView dateDisplayPrestamo, dateDisplayEntrega,valorReserva;
 
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -105,11 +106,9 @@ public class ReservasCrearFragment extends Fragment {
         new SendMailTask(this.getActivity()).execute("dayanalizeth.1994@gmail.com",
                 "Lize++52uc", toEmailList, "Reserva Vehiculo", obtenerDatosReserva());
     }
-    public Reserva obtenerDatosReserva(){
-        reserva = new Reserva();
-        reserva = reservaData.getReserva(placaReserva.getText().toString());
-        return  reserva;
-
+    public String obtenerDatosReserva(){
+        String mensaje = "Confirmacion de reserva: " + reserva.toString();
+        return  mensaje;
     }
     private void insertarReserva() {
         reserva = new Reserva();
@@ -159,7 +158,7 @@ public class ReservasCrearFragment extends Fragment {
 
     protected void sendSMSMessage() {
         phone = phoneNo.getText().toString();
-        message = "Confirmacion reserva auto";
+        message = reserva.toString();
 
         if (ContextCompat.checkSelfPermission(this.getContext(),
                 Manifest.permission.SEND_SMS)
@@ -175,7 +174,7 @@ public class ReservasCrearFragment extends Fragment {
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode,String permissions[], int[] grantResults) {
         switch (requestCode) {
             case MY_PERMISSIONS_REQUEST_SEND_SMS: {
                 if (grantResults.length > 0

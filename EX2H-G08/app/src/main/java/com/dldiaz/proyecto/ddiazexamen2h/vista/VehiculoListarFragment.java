@@ -31,6 +31,7 @@ public class VehiculoListarFragment extends Fragment{
         ListView listView = (ListView)v.findViewById(R.id.list);
         vehiculoImpl = new VehiculoImpl(this.getContext());
         vehiculoImpl.open();
+
         vehiculos = vehiculoImpl.listar();
         vehiculoImpl.close();
         ArrayAdapter<Vehiculo>adapter=new ArrayAdapter<>(this.getContext(),
