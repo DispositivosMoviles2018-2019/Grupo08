@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+            <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="VEHICUlO"
+                    android:textAlignment="center"/>
+            <EditText
+                    android:id="@+id/placa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Placa"
+                    android:textAlignment="viewStart"/>
+            <EditText
+                    android:id="@+id/marca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Marca"
+                    android:textAlignment="viewStart"/>
+            <CalendarView
+                    android:id="@+id/fecFabricacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:inputType="date"/>
+            <TextView
+                    android:id="@+id/displayFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:text="Date:"/>
+            <TextView
+                android:id="@+id/valorReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:text="Valor de la Reserva:"/>
+            <EditText
+                    android:id="@+id/costo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:hint="Costo"
+                    android:textAlignment="viewStart"/>
+
+            <Switch
+                    android:id="@+id/matriculado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Matriculado"/>
+
+            <TextView
+                    android:id="@+id/colorT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:text="Color:"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/color"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                <RadioButton
+                        android:id="@+id/blanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blanco"/>
+
+                <RadioButton
+                        android:id="@+id/negro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Negro"/>
+                <RadioButton
+                        android:id="@+id/otro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otro"/>
+            </RadioGroup>
+            <Switch
+                    android:id="@+id/estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Estado"/>
+            <TextView
+                    android:id="@+id/tipoT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:text="Tipo:"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/tipo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                <RadioButton
+                        android:id="@+id/automovil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Automovil"/>
+
+                <RadioButton
+                        android:id="@+id/camioneta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camioneta"/>
+                <RadioButton
+                        android:id="@+id/furgoneta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Furgoneta"/>
+            </RadioGroup>
+
+            <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="187dp"
+                    android:id="@+id/imageAuto"/>
+
+            <Button
+                    android:id="@+id/btnInsertarVehiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar"
+                    android:onClick="insertar"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

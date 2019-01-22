@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/menu_listar"
+            android:icon="@drawable/ic_listar_auto"
+            android:title="Listar"
+            app:showAsAction="ifRoom"
+            android:enabled="true">
+    </item>
+    <item
+            android:id="@+id/menu_crear"
+            android:icon="@drawable/ic_car"
+            android:title="Crear"
+            app:showAsAction="ifRoom"
+            android:enabled="true">
+    </item>
+    <item
+            android:id="@+id/menu_buscar_actualizar"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Buscar y Actualizar"
+            app:showAsAction="ifRoom"
+            android:enabled="true">
+    </item>
+    <item
+            android:id="@+id/menu_eliminar"
+            android:icon="@drawable/ic_delete_auto"
+            android:title="Eliminar"
+            app:showAsAction="ifRoom"
+            android:enabled="true">
+    </item>
+</menu>

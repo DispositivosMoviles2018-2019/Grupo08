@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Placa del vehiculo"
+                        android:id="@+id/placaReserva"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:layout_below="@+id/imageButton"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/black"
+                        android:typeface="normal"/>
+                <CalendarView
+                    android:id="@+id/fechaPrestamo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:inputType="date"/>
+                <TextView
+                    android:id="@+id/displayFechaPrestamo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:text="Fecha Prestamo:"/>
+                <CalendarView
+                    android:id="@+id/fechaEntrega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:inputType="date"/>
+                <TextView
+                    android:id="@+id/displayFechaEntrega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:text="Fecha Entrega:"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Correo electronico"
+                        android:id="@+id/email"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:layout_below="@+id/imageButton"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="textPersonName"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/black"
+                        android:typeface="normal"/>
+                <EditText
+                    android:id="@+id/celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButton"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="phone"
+                    android:hint="Celular"
+                   />
+
+                <TextView
+                    android:id="@+id/valorReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:text="Valor de la Reserva:"/>
+            <Button
+                android:id="@+id/btnReservar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:text="Reservar"
+                android:textColor="@android:color/background_light"/>
+            <Button
+                    android:id="@+id/buttonSend"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Confirmar"
+                    android:textColor="@android:color/background_light"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".vista.MenuActivity" android:orientation="vertical">
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="202dp"/>
+    <Button
+            android:id="@+id/btnVehiculos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:text="Vehiculos"
+            android:onClick="menuVehiculo"
+            android:textColor="@android:color/background_light"/>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+    <Button
+            android:id="@+id/btnReservas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:text="Reservas"
+            android:onClick="menuReserva"
+            android:textColor="@android:color/background_light"/>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+    <Button
+            android:id="@+id/btnRespaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:text="Respaldar Informacion"
+            android:onClick="exportDB"
+            android:textColor="@android:color/background_light"/>
+
+</LinearLayout>
